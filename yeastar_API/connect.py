@@ -6,6 +6,7 @@ class Connection:
     BUFFER_SIZE = 1024
     LoggedIn = False
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
     def __init__(self, host: str, port: int, username: str, secret: str):
         self.host = host
         self.port = port
