@@ -19,6 +19,5 @@ SECRET=apipassword
 ```
 
 TODO:
-
--[ ] Receive incoming SMS
 -[ ] Usage of SIM ports
+-[ ] Receive incoming SMS
