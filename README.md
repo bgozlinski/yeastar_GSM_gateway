@@ -1,11 +1,19 @@
-example:
-```python
-if __name__ == "__main__":
-    c = Yeastar('192.168.221.161', 5038, 'apiuser', 'apipassword')
-    c.connect_to_yeastar()
-    c.send_sms(
-        sim_port=1,
-        phone_number='+48572720038',
-        message='pozdrowienia z Yeastar'
-    )
-    
+# Python script to interact with Yeastar SMS Gateway:
+
+* connecting,
+* authenticating with,
+* sending SMS messages via any of the 8 connected SIM cards 
+
+Tested on Yeastar TG800 VoIP
+https://www.yeastar.com/voip-gsm-gateway/#specifications-acr
+
+
+## Getting Started
+In order to use API on Yeastar you need to define the IP address or IP section which is allowed to use API in SMS -> API Settings
+
+You need to create .env file locally that contains decouple Encodings:
+
+```
+APIUSERNAME=apiusername
+SECRET=apipassword
+```
