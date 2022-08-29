@@ -17,3 +17,8 @@ You need to create .env file locally that contains decouple Encodings:
 APIUSERNAME=apiusername
 SECRET=apipassword
 ```
+
+TODO:
+
+-[ ] Receive incoming SMS
+-[ ] Usage of SIM ports
